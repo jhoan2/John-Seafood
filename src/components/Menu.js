@@ -3,6 +3,7 @@ import shrimp from '../images/shrimp.jpg';
 import fish from '../images/twofish.jpg';
 import popcornshrimp from '../images/popcorn shrimp.jpg';
 import { Accordion, Card, CardDeck } from 'react-bootstrap'
+
 export default function Menu() {
     return (
         <div>
