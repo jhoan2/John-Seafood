@@ -1,32 +1,14 @@
-import React from 'react';
-import { Container, Row, Nav, NavDropdown, Carousel } from 'react-bootstrap';
+import React from 'react'
+import { Carousel } from 'react-bootstrap';
 import twofish from '../images/twofish.jpg';
 import combo from '../images/combination order.jpg';
 import oyster from '../images/oyster.jpg';
 
-export default function Header() {
+export default function carousel() {
     return (
         <div>
-            <div className="title">
-                <Container fluid>
-                    <Row className="justify-content-center">
-                        <h1>John Seafood</h1>
-                    </Row>
-                </Container>
-            </div>
             <div>
-                <Nav className="justify-content-center" activeKey="/">
-                    <Nav item>
-                        <Nav.Link href="#">Menu</Nav.Link>
-                    </Nav>
-                    <Nav item>
-                        <Nav.Link href="#">Info</Nav.Link>
-                    </Nav>
-                    <NavDropdown title="Cart" id="nav-dropdown"></NavDropdown>
-                </Nav>
-            </div>
-            <div>
-                <Carousel>
+                <Carousel className='h-50' style={{marginBottom: 50}}>
                     <Carousel.Item interval={3000}>
                         <img 
                             className="d-block w-100"
