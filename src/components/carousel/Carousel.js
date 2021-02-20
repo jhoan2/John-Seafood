@@ -1,14 +1,15 @@
 import React from 'react'
 import { Carousel } from 'react-bootstrap';
-import twofish from '../images/twofish.jpg';
-import combo from '../images/combination order.jpg';
-import oyster from '../images/oyster.jpg';
 import './carousel.css'
+import twofish from '../../images/twofish.jpg';
+import combo from '../../images/combo.jpg';
+import oyster from '../../images/oyster.jpg';
+
 export default function carousel() {
     return (
         <div>
             <div>
-                <Carousel style={{marginBottom: 50}}>
+                <Carousel>
                     <Carousel.Item interval={3000}>
                         <img 
                             className="d-block w-100"

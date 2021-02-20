@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/Header';
-import Body from './components/Body';
+import Menu from './components/menu/Menu';
 import Footer from './components/Footer';
-import Carousel  from './components/Carousel';
+import Carousel  from './components/carousel/Carousel';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Carousel />
       </div>
       <div>
-        <Body />
+        <Menu />
       </div>
       <div>
         <Footer />
