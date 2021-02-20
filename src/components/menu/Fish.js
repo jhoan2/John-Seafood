@@ -7,7 +7,6 @@ import products from '../../products';
 export default function Menu() {
     return (
         <div>
-            <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={twofish} />
                     <Card.Body>
@@ -23,8 +22,7 @@ export default function Menu() {
                             }
                         })}                    
                     </ListGroup>
-                </Card>
-            </CardDeck>       
+                </Card>      
         </div>
     )
 }

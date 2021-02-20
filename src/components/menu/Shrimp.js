@@ -1,13 +1,12 @@
 import React from 'react'
 import shrimp from '../../images/shrimp.jpg';
-import { Card, CardDeck, ListGroup } from 'react-bootstrap'
+import { Card, ListGroup } from 'react-bootstrap'
 import MenutItemFooter from './MenutItemFooter';
 import products from '../../products';
 
 export default function Menu() {
     return (
         <div>
-            <CardDeck>
                 <Card>
                     <Card.Img variant="top" src={shrimp} />
                     <Card.Body>
@@ -23,8 +22,7 @@ export default function Menu() {
                             }
                         })}                    
                     </ListGroup>
-                </Card>
-            </CardDeck>       
+                </Card>      
         </div>
     )
 }

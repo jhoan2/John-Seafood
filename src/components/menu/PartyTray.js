@@ -1,14 +1,14 @@
 import React from 'react'
-import { Card, CardDeck, ListGroup } from 'react-bootstrap'
+import { Card, ListGroup } from 'react-bootstrap'
 import MenutItemFooter from './MenutItemFooter';
 import products from '../../products';
+import chickenwing from '../../images/chicken wings.jpg';
 
 export default function Menu() {
     return (
         <div>
-            <CardDeck>
                 <Card>
-                    <Card.Img variant="top" />
+                    <Card.Img variant="top" src={chickenwing} />
                     <Card.Body>
                         <Card.Title>Party Tray</Card.Title>
                         <Card.Text>All served as is</Card.Text>
@@ -22,8 +22,7 @@ export default function Menu() {
                             }
                         })}                    
                     </ListGroup>
-                </Card>
-            </CardDeck>       
+                </Card>      
         </div>
     )
 }
