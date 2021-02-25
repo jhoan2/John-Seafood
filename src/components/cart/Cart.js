@@ -1,5 +1,6 @@
 import React from 'react'
 import { Accordion, Card, Button} from 'react-bootstrap'
+import CartItem from './CartItem';
 
 export default function Cart() {
     return (
@@ -8,11 +9,13 @@ export default function Cart() {
                 <Card>
                     <Card.Header className='text-center'>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                        Cart
+                        Price Check - Cart
                     </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
-                    <Card.Body>Hello! I'm the body</Card.Body>
+                    <Card.Body>
+                        <CartItem />
+                    </Card.Body>
                     </Accordion.Collapse>
                 </Card>
             </Accordion>

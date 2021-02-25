@@ -1,20 +1,20 @@
 import React from 'react';
 import { Container, CardColumns } from 'react-bootstrap';
-import Shrimp from './Shrimp';
-import Fish from './Fish';
-import Oyster from './Oyster'
-import Combo from './Combo'
-import Burger from './Burgers';
-import PoBoys from './PoBoys';
-import Chicken from './Chicken';
-import PopcornShrimp from './PopcornShrimp';
-import ChineseFood from './ChineseFood';
-import Salad from './Salad';
-import Gumbo from './Gumbo';
-import RedBean from './RedBean';
-import PartyTray from './PartyTray';
-import PorkChop from './PorkChop';
-import AddOn from './AddOn';
+import Shrimp from './items/Shrimp';
+import Fish from './items/Fish';
+import Oyster from './items/Oyster'
+import Combo from './items/Combo'
+import Burger from './items/Burgers';
+import PoBoys from './items/PoBoys';
+import Chicken from './items/Chicken';
+import PopcornShrimp from './items/PopcornShrimp';
+import ChineseFood from './items/ChineseFood';
+import Salad from './items/Salad';
+import Gumbo from './items/Gumbo';
+import RedBean from './items/RedBean';
+import PartyTray from './items/PartyTray';
+import PorkChop from './items/PorkChop';
+import AddOn from './items/AddOn';
 
 export default function Body() {
     return (

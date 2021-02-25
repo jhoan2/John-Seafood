@@ -1,8 +1,8 @@
 import React from 'react'
 import { Card, CardDeck, ListGroup } from 'react-bootstrap'
-import MenutItemFooter from './MenutItemFooter';
-import products from '../../products';
-import pinechicken from '../../images/pineapple chicken.jpg';
+import MenutItemFooter from '../MenutItemFooter';
+import products from '../../../products';
+import pinechicken from '../../../images/pineapple chicken.jpg';
 
 export default function Menu() {
     return (

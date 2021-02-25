@@ -17,7 +17,7 @@ export default function carousel() {
                             src={sesame}
                             alt="first slide"
                         />
-                        <Carousel.Caption className='text-dark'>
+                        <Carousel.Caption>
                             <h3>Sesame Chicken</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -27,7 +27,7 @@ export default function carousel() {
                             src={shrimppoboy}
                             alt="second slide"
                         />
-                        <Carousel.Caption className='text-dark'>
+                        <Carousel.Caption>
                             <h3>Shrimp Po-Boy</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -37,7 +37,7 @@ export default function carousel() {
                             src={bbqwings}
                             alt="third slide"
                         />
-                        <Carousel.Caption className='text-dark'>
+                        <Carousel.Caption>
                             <h3>BBQ Wings</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -47,7 +47,7 @@ export default function carousel() {
                             src={oyster}
                             alt="fourth slide"
                         />
-                        <Carousel.Caption className='text-dark'>
+                        <Carousel.Caption>
                             <h3>6 Oysters</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
@@ -57,8 +57,8 @@ export default function carousel() {
                             src={eggrollsandrice}
                             alt="fifth slide"
                         />
-                        <Carousel.Caption className='text-dark'>
-                            <h3>2 Egg Rolls and Rice</h3>
+                        <Carousel.Caption>
+                            <h3>3 Egg Rolls and Rice</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>

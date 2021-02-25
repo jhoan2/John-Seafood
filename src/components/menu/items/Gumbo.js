@@ -1,21 +1,21 @@
 import React from 'react'
 import { Card, ListGroup } from 'react-bootstrap'
-import MenutItemFooter from './MenutItemFooter';
-import products from '../../products';
-import poboy from '../../images/sausage po boy.jpg';
+import MenutItemFooter from '../MenutItemFooter';
+import products from '../../../products';
+import gumbo from '../../../images/gumbo.jpg';
 
 export default function Menu() {
     return (
         <div>
                 <Card>
-                    <Card.Img variant="top" src={poboy} />
+                    <Card.Img variant="top" src={gumbo} />
                     <Card.Body>
-                        <Card.Title>Po-boys</Card.Title>
-                        <Card.Text>All served with French Fries</Card.Text>
+                        <Card.Title>Gumbo</Card.Title>
+                        <Card.Text>All served with crackers</Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                         {products.map((product) => {
-                            if (product.group === 'Po-Boys') {
+                            if (product.group === 'Gumbo') {
                                 return <MenutItemFooter key={product.id} product={product} />
                             } else {
                                 return []

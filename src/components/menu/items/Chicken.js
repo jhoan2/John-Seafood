@@ -1,21 +1,20 @@
 import React from 'react'
-import combo from '../../images/combo.jpg';
-import { Card, CardDeck, ListGroup } from 'react-bootstrap'
-import MenutItemFooter from './MenutItemFooter';
-import products from '../../products';
-
+import { Card, ListGroup } from 'react-bootstrap'
+import MenutItemFooter from '../MenutItemFooter';
+import products from '../../../products';
+import hotwing from '../../../images/hot wings.jpg'
 export default function Menu() {
     return (
         <div>
                 <Card>
-                    <Card.Img variant="top" src={combo} />
+                    <Card.Img variant="top" src={hotwing} />
                     <Card.Body>
-                        <Card.Title>Combination Order</Card.Title>
-                        <Card.Text>All served with French Fries, Salad, and Bread</Card.Text>
+                        <Card.Title>Chicken</Card.Title>
+                        <Card.Text>All served with French Fries</Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                         {products.map((product) => {
-                            if (product.group === 'Combination Order') {
+                            if (product.group === 'Chicken') {
                                 return <MenutItemFooter key={product.id} product={product} />
                             } else {
                                 return []

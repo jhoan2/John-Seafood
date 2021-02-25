@@ -1,21 +1,21 @@
 import React from 'react'
+import shrimp from '../../../images/shrimp.jpg';
 import { Card, ListGroup } from 'react-bootstrap'
-import MenutItemFooter from './MenutItemFooter';
-import products from '../../products';
-import chickenwing from '../../images/chicken wings.jpg';
+import MenutItemFooter from '../MenutItemFooter';
+import products from '../../../products';
 
 export default function Menu() {
     return (
         <div>
                 <Card>
-                    <Card.Img variant="top" src={chickenwing} />
+                    <Card.Img variant="top" src={shrimp} />
                     <Card.Body>
-                        <Card.Title>Party Tray</Card.Title>
-                        <Card.Text>All served as is</Card.Text>
+                        <Card.Title>Shrimp</Card.Title>
+                        <Card.Text>All served with French Fries, Salad, and Bread</Card.Text>
                     </Card.Body>
                     <ListGroup className="list-group-flush">
                         {products.map((product) => {
-                            if (product.group === 'Party Tray') {
+                            if (product.group === 'Shrimp') {
                                 return <MenutItemFooter key={product.id} product={product} />
                             } else {
                                 return []
