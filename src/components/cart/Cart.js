@@ -1,8 +1,9 @@
 import React from 'react'
-import { Accordion, Card, Button} from 'react-bootstrap'
+import { Accordion, Card, Button, ListGroup} from 'react-bootstrap'
 import CartItem from './CartItem';
+import { connect } from 'react-redux';
 
-export default function Cart() {
+const Cart = ({cart}) => {
     return (
         <div>
             <Accordion className='stick-top'>
@@ -14,7 +15,14 @@ export default function Cart() {
                     </Card.Header>
                     <Accordion.Collapse eventKey="0">
                     <Card.Body>
-                        <CartItem />
+                        <ListGroup>
+                        {cart.map((item) => {
+                            return (
+                                <CartItem key={item.id} {...item} />
+                            )
+                        })}
+                        </ListGroup>
+                        <p>Total</p>
                     </Card.Body>
                     </Accordion.Collapse>
                 </Card>
@@ -22,3 +30,12 @@ export default function Cart() {
         </div>
     )
 }
+
+const mapState = (state) => {
+    const { cart } = state.cart
+    return {
+        cart
+    }
+}
+
+export default connect(mapState)(Cart)

@@ -19,7 +19,7 @@ export default function Header() {
                     <Nav item>
                         <Nav.Link href="#" className='text-light font-weight-bold'>Info</Nav.Link>
                     </Nav>
-                    <NavDropdown title="Cart" id="nav-dropdown"></NavDropdown>
+                    <Nav.Link href='#' title="Cart" id="nav-dropdown">Cart</Nav.Link>
                 </Nav>
             </div>
         </div>

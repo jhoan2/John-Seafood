@@ -6,14 +6,10 @@ import Carousel  from './components/carousel/Carousel';
 import Cart from './components/cart/Cart';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
-import reducer from './reducers/cart';
+import rootReducer from './reducers/rootReducer';
+import { composeWithDevTools } from 'redux-devtools-extension';
 
-const initialStore = {
-  cart: [],
-  quantityById: {}
-}
-
-const store = createStore(reducer, initialStore);
+const store = createStore(rootReducer, composeWithDevTools());
 
 function App() {
   return (

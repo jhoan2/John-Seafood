@@ -15,7 +15,7 @@ function MenutItemFooter({product, addToCart}) {
 }
 
 const mapDispatch = (dispatch, ownProps) => {
-    const { id } = ownProps
+    const { id } = ownProps.product
     return {
         addToCart: () => dispatch({ type: ADD_TO_CART, payload: {id}})
     }
