@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 const Cart = ({cart}) => {
     return (
         <div>
-            <Accordion className='stick-top'>
+            <Accordion>
                 <Card>
                     <Card.Header className='text-center'>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
