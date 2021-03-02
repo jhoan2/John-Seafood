@@ -1,4 +1,4 @@
-import { ADD_TO_CART } from '../../constants/ActionTypes';
+import { ADD_TO_CART, REMOVE_FROM_CART, GET_TOTAL } from '../../constants/ActionTypes';
 import products from '../../products';
 
 const INITIAL_STATE = { 
@@ -15,6 +15,10 @@ const cartReducer = (state=INITIAL_STATE, action) => {
         ...state,
         cart: inCart ? state.cart.map((item) => item.id === action.payload.id ? { ...item, amount: item.amount + 1 } : item) : [ ...state.cart, {...item, amount: 1}],
             }
+    case REMOVE_FROM_CART:
+      return {}
+    case GET_TOTAL:
+      return {}
     default: 
       return state
   }

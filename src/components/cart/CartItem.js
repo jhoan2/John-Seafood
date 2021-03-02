@@ -1,11 +1,16 @@
 import React from 'react'
-import { ListGroup } from 'react-bootstrap'
+import { ListGroup, Button } from 'react-bootstrap'
 
 export default function CartItem({title, amount, price}) {
     return (
         <ListGroup.Item className="d-flex justify-content-between">
-            <h6>{title}({amount})</h6>
-            <p><b>$</b>{price}</p>
+            <h6>{title}</h6>
+            <p>
+                <Button size='sm'> + </Button>
+                    ({amount})
+                <Button size='sm'> - </Button>
+                <b>$</b>{price}
+            </p>
         </ListGroup.Item>
     )
 }
