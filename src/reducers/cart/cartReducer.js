@@ -4,6 +4,7 @@ import products from '../../products';
 const INITIAL_STATE = { 
   products,
   cart: [],
+  total: 0
 }
 
 const cartReducer = (state=INITIAL_STATE, action) => {
@@ -30,7 +31,16 @@ const cartReducer = (state=INITIAL_STATE, action) => {
       }
       return { ...state, cart: tempCart}
     case GET_TOTAL:
-      return {}
+      let { total } = state.cart.reduce((cartTotal, cartItem) => {
+        const { price, amount } = cartItem;
+        const itemTotal = price * amount;
+        cartTotal.total += itemTotal
+        return cartTotal
+      }, { total: 0 });
+      return {
+        ...state, 
+        total
+      }
     default: 
       return state
   }

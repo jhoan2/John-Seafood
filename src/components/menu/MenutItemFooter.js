@@ -8,7 +8,7 @@ function MenutItemFooter({product, addToCart}) {
         <div>
                 <ListGroup.Item action onClick={() => addToCart()} className="d-flex justify-content-between" key={product.id}  >
                 <p>{product.title}</p>
-                <p>${product.price}</p>
+                <p>${product.price.toFixed(2)}</p>
                 </ListGroup.Item>
         </div>
     )
