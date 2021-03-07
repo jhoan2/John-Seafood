@@ -153,7 +153,7 @@ const products = [
     },
     {
         id: 22,
-        title: '3 Shrimp 3 Oyster 1 Fish 1 Egg Roll',
+        title: '3 Shrimp 3 Oyster 1 Fish 1 Egg Roll (Rice)',
         price: 10.00,
         group: 'Combination Order',
         amount: 1,
@@ -391,7 +391,7 @@ const products = [
     {
         id: 55,
         title: 'Large Rice',
-        price: 4.50,
+        price: 6.00,
         group: 'Chinese Food',
         amount: 1,
     },

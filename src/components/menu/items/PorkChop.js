@@ -14,7 +14,7 @@ export default function Menu() {
                     <Card.Body className='d-flex justify-content-between align-items-center p-6'>
                         <Card.Title>
                             <h1>Pork Chop</h1>
-                            <h6>All served with French Fries</h6>
+                            <h6>All served with Rice</h6>
                         </Card.Title>
                         <h1>
                             {showMore ? 
