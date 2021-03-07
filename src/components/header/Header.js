@@ -1,6 +1,5 @@
 import React from 'react';
 import { Nav, Jumbotron} from 'react-bootstrap';
-import './header.css';
 import { Link } from "react-scroll";
 import brickwall from '../../images/brickwall.jpg';
 
