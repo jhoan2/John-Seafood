@@ -162,42 +162,42 @@ const products = [
     {
         id: 23,
         title: 'Popcorn Shrimp',
-        price: 6.20,
+        price: 6.35,
         group: 'Popcorn Shrimp',
         amount: 1,
     },
     {
         id: 24,
         title: 'Popcorn Shrimp & 1 Fish',
-        price: 8.00,
+        price: 8.15,
         group: 'Popcorn Shrimp',
         amount: 1,
     },
     {
         id: 25,
         title: 'Popcorn Shrimp & 4 Strips',
-        price: 8.00,
+        price: 8.15,
         group: 'Popcorn Shrimp',
         amount: 1,
     },
     {
         id: 26,
         title: 'Popcorn Shrimp & 2 Fish',
-        price: 10.00,
+        price: 10.15,
         group: 'Popcorn Shrimp',
         amount: 1,
     },
     {
         id: 27,
         title: 'Small Popcorn Shrimp Only',
-        price: 5.50,
+        price: 5.60,
         group: 'Popcorn Shrimp',
         amount: 1,
     },
     {
         id: 28,
         title: 'Large Popcorn Shrimp',
-        price: 10.00,
+        price: 10.25,
         group: 'Popcorn Shrimp',
         amount: 1,
     },
@@ -592,7 +592,7 @@ const products = [
     {
         id: 83,
         title: 'Change Fries for Rice',
-        price: 0.75,
+        price: 0.98,
         group: 'Add On',
         amount: 1
     }

@@ -1,5 +1,6 @@
 {
   "name": "johnseafood",
+  "homepage": "http://johnseafood.net",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -44,9 +44,10 @@ export default function Header() {
                     smooth={true}
                     duration={1200} 
                     className='text-light font-weight-bold px-2'>
-                        Hours
+                        Info
                     </Link>
                 </Nav>
+                
             </div>
         </div>
     )
