@@ -1,5 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 const copyRight = () => {
   const date = new Date();
@@ -26,11 +27,21 @@ export default function Footer() {
                 <li>Sun 11:00am - 7:00pm</li>
               </ul> 
             </Col>
-            <Col>(225)357-5958</Col>
+            <Col>(225) 357-5958</Col>
             <Col>2750 Scenic Hwy. Baton Rouge, LA 70805</Col>
           </Row>
           <Row className="justify-content-center">
-            Copyright © John Seafood {year}
+            <p className='px-2'>
+              Copyright © John Seafood {year}
+            </p>
+            |
+            <Link
+            to="title"
+            spy={true}
+            smooth={true}
+            duration={1500} className='px-2'>
+                Top of the Page
+            </Link>
           </Row>
         </Container>
     </div>
