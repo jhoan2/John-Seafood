@@ -18,7 +18,7 @@ import AddOn from './items/AddOn';
 
 export default function Body() {
     return (
-        <Container fluid style={{padding:50}}>
+        <Container fluid style={{padding:50}} className='menu'>
             <CardColumns>
                 <Shrimp />
                 <Oyster />

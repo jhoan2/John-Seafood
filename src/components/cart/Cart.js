@@ -10,7 +10,7 @@ const Cart = ({cart, dispatch, total}) => {
         dispatch({ type: GET_TOTAL})
       })
     return (
-        <div>
+        <div className='cart'>
             <Accordion>
                 <Card>
                     <Card.Header className='text-center'>

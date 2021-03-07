@@ -68,21 +68,21 @@ const products = [
     // Fish Strips
     {
         id: 10,
-        title: '6 Fish Strips',
+        title: '6 Fish Strips (Fries Only)',
         price: 4.69,
         group: 'Fish',
         amount: 1,
     },
     {
         id: 11,
-        title: '9 Fish Strips',
+        title: '9 Fish Strips (Fries Only)',
         price: 5.59,
         group: 'Fish',
         amount: 1,
     },
     {
         id: 12,
-        title: '12 Fish Strips',
+        title: '12 Fish Strips (Fries Only)',
         price: 6.20,
         group: 'Fish',
         amount: 1,
@@ -96,7 +96,7 @@ const products = [
     },
     {
         id: 14,
-        title: 'Popcorn Fish',
+        title: 'Popcorn Fish (Fries Only)',
         price: 5.60,
         group: 'Fish',
         amount: 1,
@@ -203,7 +203,7 @@ const products = [
     },
     {
         id: 29,
-        title: 'Crawfish Tail',
+        title: 'Crawfish Tail (Rice)',
         price: 8.00,
         group: 'Popcorn Shrimp',
         amount: 1,
@@ -211,7 +211,7 @@ const products = [
     // Chicken 
     {
         id: 30,
-        title: '8pc Chicken Wing',
+        title: '8pc Chicken Wing (Rice)',
         price: 6.30,
         group: 'Chicken',
         amount: 1,
@@ -239,7 +239,7 @@ const products = [
     },
     {
         id: 34,
-        title: '3 Sticks of Pineapple Chicken',
+        title: '3 Sticks of Pineapple Chicken (Rice)',
         price: 8.10,
         group: 'Chicken',
         amount: 1,

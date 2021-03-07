@@ -1,6 +1,8 @@
 import React from 'react';
 import { Nav, Jumbotron} from 'react-bootstrap';
-import './header.css'
+import './header.css';
+import { Link } from "react-scroll";
+
 export default function Header() {
     return (
         <div>
@@ -12,14 +14,33 @@ export default function Header() {
                         </Jumbotron>
             </div>
             <div>
-                <Nav className="justify-content-center bg-secondary" activeKey="/">
+                <Nav className="justify-content-center bg-secondary p-2" activeKey="/">
                     <Nav item>
-                        <Nav.Link href="#" className='text-light font-weight-bold'>Menu</Nav.Link>
+                        <Link 
+                        to="menu"
+                        spy={true}
+                        smooth={true}
+                        duration={500} 
+                        className='text-light font-weight-bold px-2'>
+                            Menu
+                        </Link>
                     </Nav>
-                    <Nav item>
-                        <Nav.Link href="#" className='text-light font-weight-bold'>Info</Nav.Link>
-                    </Nav>
-                    <Nav.Link href='#' title="Cart" id="nav-dropdown">Cart</Nav.Link>
+                    <Link 
+                    to="footer"
+                    spy={true}
+                    smooth={true}
+                    duration={1200} 
+                    className='text-light font-weight-bold px-2'>
+                        Hours
+                    </Link>
+                    <Link 
+                    to="cart"
+                    spy={true}
+                    smooth={true}
+                    duration={500} 
+                    className='text-light font-weight-bold px-2'>
+                        Cart
+                    </Link>
                 </Nav>
             </div>
         </div>

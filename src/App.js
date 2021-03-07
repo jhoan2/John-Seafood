@@ -18,7 +18,7 @@ function App() {
         <Header />
         <Carousel />
         <Cart />
-        <Menu />
+        <Menu  />
         <Footer />
       </div>
     </Provider>
