@@ -13,7 +13,7 @@ export default function Menu() {
                     <Card.Img variant="top" src={combo} />
                     <Card.Body className='d-flex justify-content-between align-items-center p-6'>
                         <Card.Title>
-                            <h1>Combination Order</h1>
+                            <h1>Combos</h1>
                             <h6>All served with French Fries, Salad, and Bread</h6>
                         </Card.Title>
                         <h1>
