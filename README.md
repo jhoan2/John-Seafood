@@ -1,3 +1,4 @@
+<img src='public/frontpage.PNG' width='700'>
 
 # John Seafood 
 
